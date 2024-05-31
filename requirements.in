@@ -1,0 +1,17 @@
+black
+earthengine-api
+geopandas
+gdal
+geowrangler
+jupyterlab
+loguru
+numpy
+pandas
+pandas-gbq
+pre-commit
+pytest
+rasterio
+rasterstats
+mapclassify
+matplotlib
+folium

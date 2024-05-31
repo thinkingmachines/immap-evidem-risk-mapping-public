@@ -1,0 +1,76 @@
+{
+    "criteria_name": "20230412_v1",
+    "date": "2023-02-21",
+    "is_weighted": true,
+    "scoring_thresholds": {
+        "dist_nearest_road": [
+            0,
+            1000,
+            "low_val_high_score",
+            10
+        ],
+        "ntl_mean_rad": [
+            5,
+            50,
+            "low_val_high_score",
+            10
+        ],
+        "otherpois_1km": [
+            0,
+            20,
+            "low_val_high_score",
+            10
+        ],
+        "fw4a_1km": [
+            0,
+            5,
+            "low_val_high_score",
+            10
+        ],
+        "broadband_downspeed": [
+            0,
+            150000,
+            "low_val_high_score",
+            10
+        ],
+        "mobile_downspeed": [
+            0,
+            150000,
+            "low_val_high_score",
+            10
+        ],
+        "hazard_mean": [
+            0,
+            0.12,
+            "high_val_high_score",
+            10
+        ],
+        "poverty_incidence": [
+            0,
+            78.5,
+            "high_val_high_score",
+            10
+        ],
+        "pop_total_1km": [
+            1000,
+            5000,
+            "high_val_high_score",
+            10
+        ],
+        "insurgency_count": [
+            0,
+            3,
+            "low_val_high_score",
+            10
+        ]
+    },
+    "binary_filter": {},
+    "direct_score_mapping": {},
+    "threshold_filter": {},
+    "tile_score_threshold": 0.5,
+    "land_area_ha_threshold": 30,
+    "group_by_tile_class": true,
+    "threshold_m_coast_tile_counting": 500,
+    "min_tiles_near_coast": 10,
+    "crs_proj": "EPSG:3123"
+}
