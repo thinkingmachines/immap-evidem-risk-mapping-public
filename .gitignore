@@ -192,3 +192,5 @@ Temporary Items
 ### Custom ###
 # Add additional files and directories to ignore here
 data/
+secrets/
+immap-evidem-risk-mapping/

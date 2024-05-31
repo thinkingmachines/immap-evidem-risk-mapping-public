@@ -1,6 +1,6 @@
 <div align="center">
 
-# ❗ [REPLACE ME] Site Scoring Workflow Template
+# iMMAP EVIDEM Mass Movement Risk Mapping
 
 </div>
 
@@ -13,9 +13,16 @@
 
 # 📜 Description
 
-❗ [REPLACE ME]
+The iMMAP Evidem project aims to calculate the overall risk of selected target municipalities by combining the susceptibility and the social vulnerability index. This github repository contains the generation and development of the susceptibility model and the social vulnerability index.
 
-Sets up the local environment as well as outlines the standardized steps for a basic site scoring workflow. Read the repo wiki for more information
+### Project Overview
+![Project Overview](assets/immap-overview.png)
+<br/>
+### Sample Output Maps
+![Project Outputs](assets/immap-output.png)
+
+
+> Before jumping into running these notebooks, make sure to follow and execute the sections below. It is advised to set up the local environment to properly run the notebooks.
 
 <br/>
 <br/>
@@ -53,8 +60,10 @@ conda activate ./env
 make setup
 ```
 
-## 🐍 Testing
-To run automated tests, simply run `make test`.
+## 📥 Input Data Location and Notebook Order
+The notebooks in this repository read files from a specified location in the `data/` folder. To run these notebooks, we recommend to download the input data from the provided GDrive and place them in the location specified by each notebook. We provide input datasets for the starting notebooks in `01_susceptibility_model/` and `02_index_calculation/`.
+
+Folders and notebooks are also prefixed by a number (i.e. `01_create_training_data_coordinate_labels.ipynb`, `02_feature_engineering.ipynb`, etc.) that indicate their intended order of execution. These notebooks should be run in sequence.
 
 ## 📦 Dependencies
 
@@ -65,7 +74,7 @@ There are two main files involved:
 * `requirements.txt` - contains exact list of python libraries (including depdenencies of the main libraries) your environment needs to follow to run the repo code; compiled from `requirements.in`
 
 
-When you add new python libs, please do the ff:
+When you add new python libraries, please do the ff:
 
 1. Add the library to the `requirements.in` file. You may optionally pin the version if you need a particular version of the library.
 
@@ -74,3 +83,18 @@ When you add new python libs, please do the ff:
 3. Commit both the `requirements.in` and `requirements.txt` files so other devs can get the updated list of project requirements.
 
 Note: When you are the one updating your python env to follow library changes from other devs (reflected through an updated `requirements.txt` file), simply run `pip-sync requirements.txt`
+
+<br/>
+
+## © Thinking Machines Copyright on Dataset Alignment Code
+
+In developing the code for this project with iMMAP EVIDEM, Thinking Machines Data Science, Inc. used pre-written code found in the following folders of the Github repository:
+
+- 01_AOI_generation
+- 02_dataset_alignment
+
+Analytics Template, © Created 2023, Thinking Machines Data Science, Inc.
+
+\<legal@thinkingmachin.es>
+
+The above pre-written code is an Independent Asset of Thinking Machines Data Science, Inc. and its use is subject to the limited license granted to iMMAP, Inc. / iMMAP France in the relevant Service Agreement and/or Scope of Work, if any.
