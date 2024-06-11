@@ -85,16 +85,3 @@ When you add new python libraries, please do the ff:
 Note: When you are the one updating your python env to follow library changes from other devs (reflected through an updated `requirements.txt` file), simply run `pip-sync requirements.txt`
 
 <br/>
-
-## © Thinking Machines Copyright on Dataset Alignment Code
-
-In developing the code for this project with iMMAP EVIDEM, Thinking Machines Data Science, Inc. used pre-written code found in the following folders of the Github repository:
-
-- 01_AOI_generation
-- 02_dataset_alignment
-
-Analytics Template, © Created 2023, Thinking Machines Data Science, Inc.
-
-\<legal@thinkingmachin.es>
-
-The above pre-written code is an Independent Asset of Thinking Machines Data Science, Inc. and its use is subject to the limited license granted to iMMAP, Inc. / iMMAP France in the relevant Service Agreement and/or Scope of Work, if any.
